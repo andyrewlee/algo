@@ -9,9 +9,7 @@ class SinglyLinkedList
 
   def find(element)
     current_node = @head
-    while current_node.element != element
-      current_node = current_node.next
-    end
+    current_node = current_node.next while current_node.element != element
     return current_node
   end
 
@@ -40,8 +38,6 @@ class SinglyLinkedList
 
   def remove(element)
     previous_node = find_previous(element)
-    if previous_node.next != nil
-      previous_node.next = previous_node.next.next
-    end
+    previous_node.next = previous_node.next.next if previous_node.next != nil
   end
 end
