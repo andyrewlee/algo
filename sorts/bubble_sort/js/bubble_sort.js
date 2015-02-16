@@ -35,3 +35,6 @@ function betterBubble(arr) {
 
   return arr;
 }
+
+console.log(bubbleSort(bigo));
+console.log(betterBubble(bigo));
