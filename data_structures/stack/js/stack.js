@@ -6,11 +6,11 @@ var Stack = (function(){
 
   Stack.prototype.push = function(item) {
     this.dataStore[this.top] = item;
-    this.top += 1;
+    this.top++;
   }
 
   Stack.prototype.pop = function() {
-    this.top -= 1;
+    this.top--;
     return this.dataStore[this.top];
   }
 
